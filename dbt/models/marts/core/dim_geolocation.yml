@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_geolocation
+    description: "Dimension table for geolocation data"
+    columns:
+      - name: geolocation_zip_code_prefix
+        description: "The zip code prefix"
+        tests:
+          - not_null
+        
