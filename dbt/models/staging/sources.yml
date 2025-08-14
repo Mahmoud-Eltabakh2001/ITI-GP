@@ -1,0 +1,25 @@
+version: 2
+
+sources:
+  - name: bronze_layer
+    database: ecommerce_db
+    schema: public
+    tables:
+      - name: RAW_CUSTOMERS
+        description: "Customer data including location and unique ID."
+      - name: RAW_ORDERS
+        description: "Order details including status and timestamps."
+      - name: RAW_PRODUCTS
+        description: "Product details including category, dimensions, and weight."
+      - name: RAW_SELLERS
+        description: "Seller information including city and state."
+      - name: RAW_ORDER_PAYMENTS
+        description: "Payment information related to orders."
+      - name: RAW_ORDER_REVIEWS
+        description: "Customer reviews and ratings for orders."
+      - name: RAW_PRODUCT_CATEGORY_NAME_TRANSLATION
+        description: "Translation of product category names to English."
+      - name: RAW_GEOLOCATION
+        description: "Geolocation data based on zip code."
+      - name: RAW_ORDER_ITEMS
+        description: "Order item details including price and shipping info."
